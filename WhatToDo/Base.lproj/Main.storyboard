@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--To Do List View Controller-->
+        <!--ToDoList-->
         <scene sceneID="Nof-Sb-vWb">
             <objects>
                 <tableViewController id="3d9-Gb-kzJ" customClass="ToDoListViewController" customModule="WhatToDo" customModuleProvider="target" sceneMemberID="viewController">
@@ -32,7 +32,7 @@
                             <outlet property="delegate" destination="3d9-Gb-kzJ" id="haI-uP-f7a"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="5Bz-FA-PFB"/>
+                    <navigationItem key="navigationItem" title="ToDoList" id="5Bz-FA-PFB"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LWn-ac-nLE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -46,6 +46,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8VY-Ug-gdc">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
