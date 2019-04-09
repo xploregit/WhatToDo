@@ -11,6 +11,8 @@ import UIKit
 class ToDoListViewController: UITableViewController {
 
     var itemArray = ["Find Mike", "Buy Eggos", "Destroy Demogorgon"]
+    // Save to UserDefaults (1)
+    let defaults = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +20,11 @@ class ToDoListViewController: UITableViewController {
         navigationItem.title = "ToDoList"
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addButtonPressed))
         navigationItem.rightBarButtonItem?.tintColor = UIColor.white
+        
+        // Save to UserDefaults (3)
+        if let items = defaults.array(forKey: "TodoListArray") as? [String] {
+            itemArray = items
+        }
     }
     
     @objc func addButtonPressed() {
@@ -27,6 +34,8 @@ class ToDoListViewController: UITableViewController {
             // What will happen once the user clicks the Add Item button on our UIAlert
             if textField.text != "" {
                 self.itemArray.append(textField.text!)
+                // Save to UserDefaults (2)
+                self.defaults.set(self.itemArray, forKey: "TodoListArray")
                 self.tableView.reloadData()
             }
         }
