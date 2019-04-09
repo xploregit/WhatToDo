@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--ToDoList-->
+        <!--Todoey-->
         <scene sceneID="Nof-Sb-vWb">
             <objects>
                 <tableViewController id="3d9-Gb-kzJ" customClass="ToDoListViewController" customModule="WhatToDo" customModuleProvider="target" sceneMemberID="viewController">
@@ -32,7 +32,7 @@
                             <outlet property="delegate" destination="3d9-Gb-kzJ" id="haI-uP-f7a"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="ToDoList" id="5Bz-FA-PFB"/>
+                    <navigationItem key="navigationItem" title="Todoey" id="5Bz-FA-PFB"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LWn-ac-nLE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
